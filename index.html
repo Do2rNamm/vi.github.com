@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+    <!-- Liên kết đến Bootstrap CSS để sử dụng các phong cách mặc định -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Liên kết đến tập tin CSS tùy chỉnh -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Liên kết đến bộ icon Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Trang cá nhân</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('about')">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('skills')">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Phần nội dung Home -->
+    <div id="home" class="section container text-center active">
+        <img src="images/avatar.jpg" class="img-fluid rounded-circle" alt="Profile Picture" width="200" height="200">
+        <h1>Xin chào, tôi là Nam</h1>
+        <p class="lead">Một lập trình viên và nhà phát triển web.</p>
+    </div>
+
+    <!-- Phần nội dung About -->
+    <div id="about" class="section bg-light container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h1 class="mb-4">Giới thiệu</h1>
+                <ul class="list-unstyled">
+                    <li><strong>Tôi tên là:</strong> Đỗ Hải Nam.</li>
+                    <li><strong>Sinh viên trường:</strong> ĐH Hồng Đức</li>
+                    <li><strong>Công việc:</strong> Tôi là một lập trình viên và nhà phát triển web với niềm đam mê sâu sắc đối với công nghệ và sự sáng tạo.</li>
+                    <li>Một trong những mảnh ghép quan trọng của sự nghiệp của tôi là khả năng sáng tạo và giải quyết vấn đề.</li>
+                    <li>Tôi thích thử thách mới và luôn cố gắng học hỏi để cải thiện kỹ năng của mình.</li>
+                    <li>Hiện tại, tôi đang tập trung phát triển các kỹ năng về ReactJS và Node.js để có thể tham gia vào các dự án phát triển phần mềm lớn hơn.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/bus.gif" class="img-fluid rounded" alt="Profile Image" width="550" heigh="550">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Phần nội dung Skills -->
+    <div id="skills" class="section container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="mb-4">Kỹ năng</h2>
+                <p>Dưới đây là một số kỹ năng chính mà tôi đã tích lũy và phát triển qua thời gian:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>HTML5 & CSS3:</strong> Thiết kế và xây dựng các giao diện web hiện đại và responsive.</li>
+                    <li class="mb-2"><strong>JavaScript & ES6+:</strong> Lập trình ứng dụng web tương tác và động bằng JavaScript.</li>
+                    <li class="mb-2"><strong>React & Vue.js:</strong> Xây dựng các ứng dụng web đơn trang (SPA) hiệu quả với React và Vue.js.</li>
+                    <li class="mb-2"><strong>Node.js & Express:</strong> Phát triển các backend server và API với Node.js và Express.</li>
+                    <li class="mb-2"><strong>Responsive Design:</strong> Thiết kế các trang web linh hoạt và tương thích với mọi loại thiết bị.</li>
+                    <li class="mb-2"><strong>Version Control:</strong> Sử dụng Git để quản lý phiên bản mã nguồn và hợp tác trong nhóm.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/love.gif" class="img-fluid rounded" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Phần footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div>
+            <h3>❤️Cảm ơn các bạn đã dành thời gian để xem❤️</h3>
+        </div>
+    </footer>
+    <footer class="footer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="social">
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-discord'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-telegram'></i>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 About me. All rights reserved.</p>
+    </footer>
+    
+    <!-- Liên kết đến các tập tin JavaScript của Bootstrap và jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
